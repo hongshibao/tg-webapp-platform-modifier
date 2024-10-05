@@ -2,17 +2,18 @@
 // @name         Telegram WebApp Platform Modifier
 // @namespace    https://github.com/hongshibao
 // @version      2024-10-05
+// @updateURL    https://raw.githubusercontent.com/hongshibao/tg-webapp-platform-modifier/main/platform-modifier.user.js
+// @downloadURL  https://raw.githubusercontent.com/hongshibao/tg-webapp-platform-modifier/main/platform-modifier.user.js
 // @description  Allows you to run Telegram WebApps in the web version of Telegram by modifying the platform parameter (tgWebAppPlatform).
 // @author       thinkpoet
 // @match        https://web.telegram.org/*
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=greasyfork.org
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=telegram.org
 // @grant        none
 // ==/UserScript==
 
 (function() {
     'use strict';
 
-    // Your code here...
     function modifyIframeSrc(iframe) {
       let src = iframe.getAttribute('src')
       if (src && src.includes('tgWebAppPlatform=')) {
@@ -32,7 +33,7 @@
               }
             } catch (error) {
               console.error(
-                '[Telegram WebApp Platform Modifier]: error while changing the tgWebAppPlatform parameter',
+                '[TG WebApp Platform Modifier]: error while changing the tgWebAppPlatform parameter',
                 error
               )
             }
@@ -51,6 +52,6 @@
           subtree: true,
         })
       } else {
-        console.error('[Telegram WebApp Platform Modifier]: document.body is not ready.')
+        console.error('[TG WebApp Platform Modifier]: document.body is not ready.')
       }
 })();
