@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Telegram WebApp Platform Modifier
 // @namespace    https://github.com/hongshibao
-// @version      2024-10-05
+// @version      0.0.1
 // @updateURL    https://raw.githubusercontent.com/hongshibao/tg-webapp-platform-modifier/main/platform-modifier.user.js
 // @downloadURL  https://raw.githubusercontent.com/hongshibao/tg-webapp-platform-modifier/main/platform-modifier.user.js
 // @description  Allows you to run Telegram WebApps in the web version of Telegram by modifying the platform parameter (tgWebAppPlatform).
